@@ -1,0 +1,207 @@
+<style>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#body {
+  background-color:#ffc54a;
+}
+
+.header {
+  width:100%;
+  height:75px;
+  background: black;
+  position: absolute;
+  z-index: 10px;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.logo {
+  float:left;
+  line-height: 30px;
+}
+
+.logo h1 {
+  color:orange;
+  font-weight:700px;
+  cursor: default;
+  font-family:Lobster;
+}
+
+.menu {
+  float:right;
+  line-height: 75px;
+}
+
+.menu a {
+  color:#0d4a72;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  line-height: normal;
+  transition: all 50ms ease;
+  border-bottom: 4px solid transparent;
+}
+
+.menu a:hover {
+  color:orange;
+  border-bottom: 4px solid red;
+}
+
+.container2 {
+  text-align:center;
+  margin:auto;
+  margin-top:100px;
+  line-height:40px;
+}
+
+.container2 #subtitulo {
+  font-weight:1500px;
+  color:#400700;
+}
+
+.container2 .email {
+  font-size:20px;
+}
+  
+.container2 .botons {
+  background: orange;
+  border: none;
+  padding: 4px;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.container3 {
+  line-height: 25px;
+  width:800px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:20px;
+}
+
+.p {
+  text-align:justify;
+}
+
+.video {
+  width: 40%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.container4 {
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin:auto;
+}
+
+.container4 .card {
+  width:330px;
+  height: 260px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow:hidden;
+  margin:20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.container4 .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container4 .titulo {
+  font-weight:600px;
+  color:orange;
+  background:black;
+}
+
+.container4 .descripcion {
+  padding:20px;
+  font-size:16px;
+}
+
+</style>
+
+<html>
+  <head>
+    <title>Un chef en casa</title>    
+  </head>
+  <body id="body">
+    <header class="header">
+      <div class="container">
+           <div class="logo">
+             <h1>Un chef en casa</h1>
+        </div>
+        <nav class="menu">
+          <a href="#section1">Novedades</a>
+          <a href="#section2">De dónde somos</a>
+          <a href="#section3">Precios</a>
+      </div>
+        
+        <div class="container2">
+             <div id="subtitulo">
+               <h2>Comida hecha con amor</h2>
+          </div>
+          <div class="email">
+  <input class="email" type="email" name="correo" id="email" placeholder="Ingrese su correo" required>
+          </div>
+  <input class="botons" type="submit" name="correo" id="email" value="submit">
+        </div><br>
+        
+<div class="container3" id="section1">
+  <div class="informacion1">
+    <h2 class="informacion1"> Comida tradicional Latino Americana</h2>
+    <p class="p"> La comida que preparamos en un Chef en casa es la muestra de la mejor gastronomía del continente sur americano. Nuestros cocineros que vienen de diferentes países han logrado fusionar lo mejor del sabor y la tradición para, llevar a su casa, no solo el mejor alimento, pero también la calidad y el sabor que nos caracteriza como el continente más alegre del mundo.</p>
+  </div><br>
+  
+
+  <div class="informacion1">
+    <h2 class="informacion1"> Talleres culinarios</h2>
+    <p class="p">Nuestra propuesta va más allá de solamente ofrecerles la experiencia de la mejor comida del mundo, queremos tambiéin que ustedes sean parte de esta revolución culinaria através de talleres interactivos dónde aprenderán los secretos de la cocina latinoamericana. Adicionalmente, ofrecemos la posibilidad de hacerlo en inglés, francés y en español.</p>
+        </div>
+ </div>
+<div class="video" id="section2">  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GcEDjK5tuBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+<div class="container4" id="section3">
+  
+  <div class="card">
+    <h1 class="titulo">Junior</h1>
+    <h2 class="precio>">$150</h2>
+    <p class="descripcion">Incluye la preparación de una comida típica, servicio en la casa e iniciación a la identificación de productos locales.</p>
+  </div>
+  
+  <div class="card">
+    <h1 class="titulo">VIP</h1>
+    <h2 class="precio>">$250</h2>
+    <p class="descripcion">Incluye la preparación de una comida típica, servicio en la casa e iniciación a la identificación de productos locales y la participación de intercambios de idiomas español, francés e inglés.</p>
+  </div>
+  
+  <div class="card">
+    <h1 class="titulo">Premium</h1>
+    <h2 class="precio>">$500</h2>
+    <p class="descripcion">Incluye la preparación de una comida típica, servicio en la casa e iniciación a la identificación de productos locales. La posibilidad de ir a cualquier país de latino américa y conocer los lugares tradicionales de esta maravillosa comida</p>
+  </div>
+  
+        </div>
+        
+  </body>
+  
+</html>

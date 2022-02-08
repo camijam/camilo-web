@@ -1,0 +1,294 @@
+@import url(<link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">)
+
+
+/*common styles*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+}
+
+html{
+    font-size: 62.5%; /*1ram = 10px*/
+}
+
+/*end common styles*/
+
+/*Nav bar*/
+
+.navbar{
+    text-decoration: none;
+    width:100%;
+    height:10rem;
+    background-color: black;
+    position:fixed;
+    top:-14rem;
+    z-index:100; /*esto arregla el navbar no se sobreponga a las imagenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: .2rem .2rem .2rem black;
+    transition:top 0.4s;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.navbar.change{
+    top:0;
+    transition: top .4s .2s;
+}
+
+.navbar-link{
+    color: #aaa;
+    margin: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: color 0.3s, opacity 0.2s;
+}
+
+.navbar-link:hover {
+    color: rgb(163, 4, 155);
+}
+
+.navbar-link i{
+    font-size: 3rem;
+}
+
+.change .navbar-link{
+    opacity:1;
+}
+
+.change .navbar-link:nth-child(1){
+    transition:opacity .4s .5s, color .3s;
+}
+
+.change .navbar-link:nth-child(2){
+    transition:opacity .4s .6s, color .3s;
+}
+
+.navbar-link span{
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    margin-top: .5rem;
+    font-family: 'Jim Nightshade', cursive;
+}
+
+.menu {
+    width: 4rem;
+    height: 6rem;
+    background-color: rgb(163, 4, 155);
+    position: fixed;
+    top: 1rem;
+    left: 5rem;
+    border-radius: 30rem 30rem 15rem 15rem; /*shape palanquita de menu para volverla redonda */
+    box-shadow: .1rem .1rem .1rem black;
+    cursor: pointer;
+    transition:top 0.4s 0.2s;
+} 
+
+.menu.change{
+    top:15rem;
+    transition:top .4s;
+}
+
+.menu::before {
+    content:"";
+    width: .3rem;
+    height: 15rem;
+    background-color: rgb(163, 4, 155);
+    position:absolute;
+    top: -15rem;
+    left: calc(50% - .15rem); /*calculation half of the width of the line */
+    box-shadow: .1rem 0 .1rem black;
+}
+
+/*end nav bar*/
+
+/*section 1*/
+
+.section-1{
+    width:100%;
+    height:100vh;
+    background-color: rgb(198, 142, 206);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; /*crea espacios entre los elementos*/
+}
+
+.section-heading{
+    font-size: 8rem;
+    font-weight: 900;
+    margin-top: -5rem;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    text-shadow: 0.3rem 0.3rem 0.3rem #000;
+    font-family: 'Jim Nightshade', cursive;
+}
+
+.description{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Jim Nightshade', cursive;
+    color:black;
+    text-align: center;
+    margin-top: -20rem;
+    letter-spacing: 0.5rem;
+}
+
+/*end section 1*/
+
+/*section 2*/
+
+.section-3 {
+    background-color: rgb(198, 142, 206);
+    padding: 5rem;
+}
+
+.gallery {
+    display:flex;
+    flex-wrap: wrap; /*place images in two rows*/
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10rem;
+}
+
+.gallery-link{
+    position:relative;
+    margin:4rem 1rem;
+}
+
+.gallery-link::before{
+    content:"";
+    position: absolute;
+    top: 2vw;
+    left:80%;
+    width: .2rem;
+    height: 0;
+    background-color: white;
+    z-index:10;
+    transition: height .5s; /*´para darle el tiempo a la linea de aparecer */
+}
+
+.gallery-link::after{
+    content:"";
+    position: absolute;
+    top: 40%;
+    left:2rem;
+    width: 0;
+    height: .2rem;
+    background-color: white;
+    transition: width .5s; /*´para darle el tiempo a la linea de aparecer */
+}
+
+.gallery-link:hover::before{
+    height:80%;
+}
+
+.gallery-link:hover::after{
+    width:80%;
+} 
+
+
+.food-img {
+    width:24vw;
+    height: 15vw;
+    object-fit:cover;
+    box-shadow: .3rem .3rem .1rem #e92e92, 
+    .5rem .5rem .1rem #a2e946,
+    .7rem .7rem .1rem #297ce9,
+    .9rem .9rem .1rem #e92999; /*para crear esa margen rosada */
+    transition: all 0.5s;
+}
+
+.gallery-link:hover .food-img{
+    box-shadow: 1rem 1rem .1rem #e92e92, 
+    2rem 2rem .1rem #a2e946,
+    3rem 3rem .1rem #297ce9,
+    4rem 4rem .1rem #e92999;
+    filter:blur(0.5rem); /*efecto disclosure la imagen y darle paso a un fondo borroso */
+    opacity:0.5;
+    transform:sclae(1.1)
+}
+
+.food-name{
+    position:absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    color: white;
+    width:0; /* ocultar el texto y los titulos que estan encima de la img */
+    overflow: hidden;
+    width:0;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.gallery-link:hover .food-name{
+    width:100%; /*aca lo que se esta animando es el width con respecto food-name*/
+    transition: width 1.5s .5s;
+}
+
+.food-description{
+    position:absolute;
+    bottom:2vw;
+    left: 1rem;
+    right:1rem;
+    width: 70%;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    color:black;
+    opacity:0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    font-family: 'Jim Nightshade', cursive;
+} 
+
+.gallery-link:hover .food-description{
+    opacity:1;
+    visibility: visible;
+    transition: opacity .5s .5s;
+}
+
+/*end section 2*/
+
+/*section 3*/
+
+.section-4 {
+    width:100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 3rem 0;
+    position:absolute;
+}
+
+.copy-right{
+    position:absolute;
+    bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #eee;
+    letter-spacing: .1rem;
+    border-top: .1rem solid #888;
+    padding-top: .6rem;
+    width:100%;
+    text-align: center;
+}
+
+/*end section 3*/
