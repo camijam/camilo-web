@@ -72,6 +72,10 @@
     text-transform: capitalize;
     letter-spacing: 0.5rem;
     text-shadow: 0.3rem 0.3rem 0.3rem #000;
+    /*animation fadeAnimation*/
+    opacity:0;
+    visibility: hidden;
+    animation: fadeAnimation 1s 1.5s forwards;
 }
 
 .section-heading-text{
@@ -82,7 +86,24 @@
     text-align: center;
     letter-spacing: 0.2rem;
     text-shadow: 0.3rem 0.3rem 0.3rem #000;
+    /*animation fadeAnimation*/
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeAnimation 1s 2s forwards;
 }
+
+/*animation section-heading & section-heading-text*/
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 
 /*end section 1*/
 
