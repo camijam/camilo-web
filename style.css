@@ -1,7 +1,6 @@
 @import url(<link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Codystar&family=Nunito:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">);
 
 
-
 /*common styles*/
 *{
     margin:0px;
@@ -9,7 +8,7 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
-    font-family: 'Nunito'; sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
 
@@ -43,7 +42,6 @@
 }
 
 
-
 .navbar-link{
     color: #aaa;
     margin: 0 4rem;
@@ -52,6 +50,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+.navbar-link.blog{
+    color: rgba(255, 251, 0, 0.89);
 }
 
 .navbar-link:hover {
@@ -81,7 +84,7 @@
 
 .section-heading{
     font-size: 3rem;
-    font-weight: 900;
+    font-weight: 500;
     margin-top: -5rem;
     color: white;
     text-align: center;

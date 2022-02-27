@@ -1,0 +1,79 @@
+@import url(<link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&family=Codystar&family=Nunito:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">);
+
+/*common styles*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+html{
+    background-color: rgba(138, 138, 138, 0.733);
+ }
+ 
+ /*end common styles*/
+
+/*nav*/
+/*
+.nav {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.nav-bar{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 25px;
+    color: #eee;
+    transition: 0.2s;
+}
+
+.nav-bar:hover {
+    color: orange;
+}
+
+/*end nav*/
+
+/*section-1*/
+
+.titulo{
+    text-align: center;
+    margin-top: 5rem;
+    color:rgb(85, 0, 0)
+}
+
+.intro{
+    text-align: justify;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.text{
+    text-align: justify;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    line-height: 2;
+}
+
+.references{
+    margin-left: 5rem;
+}
+
+.references-1{
+    margin-top: 5px;
+    text-align: justify;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    line-height: 2;
+}
+
+
+/*end of section-1*/
