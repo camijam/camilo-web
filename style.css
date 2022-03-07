@@ -270,10 +270,11 @@ img.active{
 }
 
 .cont-btn {
-    max-width:70%;
+    /*max-width:70%;
     margin-top: -50px;
     height: auto;
     margin-left: 160px; /*no es la mejor forma pero bueno..*/
+    margin-top:-50px;
     border: 1px solid  rgb(17, 17, 17);
     display: flex;
     justify-content: center;
@@ -284,7 +285,7 @@ img.active{
     margin: 0 15px;
     cursor:pointer;
     color: #eee;
-    transition: 0.8s;
+    transition: 1s;
 }
 
 .btn-nav:hover{
