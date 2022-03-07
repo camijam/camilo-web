@@ -222,6 +222,70 @@
 
 /*section 2*/
 
+
+.section-2{
+    width: 100%;
+    height: 40rem;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgb(17, 17, 17);
+}
+
+.section-heading.Projects{
+    margin-top: 5px;
+}
+
+.slider img{
+    max-width:70%;
+    margin-left: 260px; /*no es la mejor forma pero bueno..*/
+    margin-top: 2rem;
+    display: none;
+}
+
+img { 
+    width: 600px;
+    height: 400px;
+    padding:50px;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+img.active{
+    display: block;
+    animation: fade 0.9s;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cont-btn {
+    max-width:70%;
+    margin-top: -50px;
+    height: auto;
+    margin-left: 160px; /*no es la mejor forma pero bueno..*/
+    border: 1px solid  rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+}
+
+.btn-nav {
+    font-size: 50px;
+    margin: 0 15px;
+    cursor:pointer;
+    color: #eee;
+    transition: 0.8s;
+}
+
+.btn-nav:hover{
+    color:rgb(189, 101, 2);
+}
+/*
 .section-2{
     width: 100%;
     height: 100vh;
@@ -235,6 +299,7 @@
 .card-container{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-evenly;
 }
 
@@ -267,6 +332,7 @@
     margin: 2rem 3;
 }
 
+*/
 
 /*end section 2*/
 
@@ -322,4 +388,3 @@
 }
 
 /*end section 4*/
-

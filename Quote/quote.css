@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+/*parametros comunes*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* fin parametros comunes*/
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(125, 167, 247);
+}
+
+.wrapper{
+    width:600px;
+    background-color: #eee;
+    border-radius: 20px; /*para darle bordesito al cuadrado*/
+    padding: 30px 30px 25px;
+}
+
+.wrapper header {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper .content {
+    margin: 35px 0;
+}
+
+.content .quote-area{
+    display: flex;
+    justify-content: center; /*centra la quote y alinea el texto a la mitad*/
+}
+
+.quote-area i{
+    font-size: 15px;
+}
+
+/*en esta parte se están alineando las " " de la quote*/
+.quote-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+
+.quote-area i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 10px;
+}
+/*fin*/
+
+.quote-area .quote{
+    font-size: 16px;
+    text-align: center;
+    word-break: break-all;
+}
+
+.content .author{
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.author span:first-child{
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+
+.wrapper .buttons{
+    border-top: 1px solid rgb(170, 170, 170);   
+}
+
+.buttons .features{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.features ul{
+    display: flex;
+}
+
+/* centrar configurar la dimension y el borde de los pequeños iconos*/
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(1, 102, 105);
+    border-radius: 50%;
+    border: 2px solid rgb(1, 102, 105);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.features ul li:hover {
+    color: #fff;
+    background: rgb(1, 102, 105);
+}
+
+/*configuracion de boton para el blog*/
+.features button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 13px 22px;
+    color: #fff;
+    background-color: rgb(1, 102, 105);
+    border-radius: 30px;
+    font-style: 16px;    
+}
+
+button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+
+
