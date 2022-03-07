@@ -235,9 +235,14 @@
     margin-top: 5px;
 }
 
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
 .slider img{
-    max-width:70%;
-    margin-left: 260px; /*no es la mejor forma pero bueno..*/
+    max-width:100%;
+    /*margin-left: 260px; /*no es la mejor forma pero bueno..*/
     margin-top: 2rem;
     display: none;
 }
