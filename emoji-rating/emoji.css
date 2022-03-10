@@ -1,0 +1,55 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center; /*eje x*/
+    height: 100vh;
+    align-items: center; /*eje y*/
+    background-color: rgb(134, 201, 255);
+}
+
+.feedback-container{
+    background-color: white;
+    width:400px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    position: relative; /*as it's the parent then we can use position absolute for the child*/
+}
+
+.emoji-container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden; /*oculta los otros emojis porque estan afuera del container*/
+}
+
+/*estamos usando la clase comun de los iconos*/
+
+.far {
+    margin: 1px;
+    transform: translateX(0); /*muestra el primer emoji el bravito*/
+    transition: transform .2s;
+}
+
+.raiting-container{
+    position: absolute; /*target the parent para mover las estrellas*/
+    left: 50%;
+    transform:  translateX(-50%);
+    bottom: 20%;
+}
+
+.fa-star {
+    color: lightgray;
+    cursor:pointer;
+}
+
+.fa-star.active {
+    color: gold;
+}
+
+/* 28:51min

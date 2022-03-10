@@ -33,4 +33,3 @@ function slidePrecedent(){
 precendent.addEventListener('click', slidePrecedent)
 
 
-//no funciona el jv
