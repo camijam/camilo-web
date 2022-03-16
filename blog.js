@@ -1,3 +1,4 @@
+
 const items = document.querySelectorAll('img');
 const nbSlide = items.length;
 const suivant = document.querySelector('.right');
@@ -31,5 +32,8 @@ function slidePrecedent(){
 }
 
 precendent.addEventListener('click', slidePrecedent)
+
+
+
 
 
