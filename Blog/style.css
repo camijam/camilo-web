@@ -82,6 +82,12 @@ html{
     object-fit: cover;
     opacity: 0.8;
     position: relative;
+    transition: 1.5s;
+    border-radius: 5px;
+}
+
+.project-img:hover{
+    padding-bottom:20px;
 }
 
 .titulo {
