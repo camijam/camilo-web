@@ -100,11 +100,12 @@
 .section-heading-text{
     font-size: 1.5rem;
     font-weight: 500;
-    margin-top: -15rem;
+    margin-top: -10rem;
     color: white;
     text-align: center;
     letter-spacing: 0.2rem;
     text-shadow: 0.3rem 0.3rem 0.3rem #000;
+    line-height: 40px;
     /*animation fadeAnimation*/
     opacity: 0;
     visibility: hidden;
@@ -289,8 +290,6 @@ img.active{
 .btn:hover{
     filter: brightness(2);
 }
-
-
 
 /*end section 2*/
 
